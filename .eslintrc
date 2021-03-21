@@ -1,0 +1,48 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "eslint-config-prettier"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "jest": true,
+    "node": true,
+    "browser": true
+  },
+  "plugins": ["react-hooks"],
+  "globals": {
+    "__DEV__": true
+  },
+  "rules": {
+    "quotes": [2, "single", "avoid-escape"],
+    "semi": [2, "always"],
+    "no-console": "off",
+    "no-debugger": 1,
+    "react-hooks/rules-of-hooks": "error",
+    "no-param-reassign": "warn",
+    "react-hooks/exhaustive-deps": 0,
+    "prefer-promise-reject-errors": [
+      "off",
+      {
+        "allowEmptyReject": true
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "alias": {
+        "map": [["@", "./src"]]
+      },
+      "node": {
+        "extensions": [".js", ".jsx", ".json", ".ts", ".tsx", ".css"],
+        "paths": ["src"]
+      }
+    }
+  }
+}

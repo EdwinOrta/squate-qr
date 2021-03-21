@@ -1,0 +1,10 @@
+.m-skeleton__example {
+  display: flex;
+  flex-direction: column;
+
+  @import './sub-modules/dependent';
+
+  &__container {
+    background-color: gold;
+  }
+}
