@@ -1,3 +1,3 @@
 export const internalPaths = {
-  example: '/example',
+  home: '/',
 };

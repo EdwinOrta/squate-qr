@@ -3,14 +3,14 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import { internalPaths } from 'navigation';
 
-const Example = lazy(() => import('views/Example'));
+const Home = lazy(() => import('views/Home'));
 
 const Router = () => {
   return (
     <BrowserRouter>
       <Suspense fallback={<div />}>
         <Switch>
-          <Route path={internalPaths.example} component={Example} />
+          <Route path={internalPaths.home} component={Home} />
         </Switch>
       </Suspense>
     </BrowserRouter>

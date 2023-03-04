@@ -1,0 +1,20 @@
+&__select {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    margin-right: 5px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__error {
+    margin-top: 3px;
+    color: $error-red;
+    font-size: 14px;
+    text-align: left;
+  }
+}

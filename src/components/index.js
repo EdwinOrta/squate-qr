@@ -1,1 +1,5 @@
-export { default as Dependent } from './Dependet';
+export { default as Title } from './Title';
+export { default as Select } from './Select';
+export { default as Input } from './Input';
+export { default as Button } from './Button';
+export { default as Spinner } from './Spinner';
